@@ -249,6 +249,11 @@ public class PasswordView extends View {
     /**
      * 删除
      */
+    public void clear() {
+        password = new String[4];
+        isInputComplete = false;
+    }
+    
     private String delete() {
         String deleteText = null;
         if (cursorPosition > 0) {
