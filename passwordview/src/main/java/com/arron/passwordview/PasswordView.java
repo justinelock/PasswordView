@@ -250,8 +250,9 @@ public class PasswordView extends View {
      * 删除
      */
     public void clear() {
-        password = new String[4];
-        isInputComplete = false;
+        for (int i = 0; i < passwordLength; i++) {
+            delete();
+        }
     }
     
     private String delete() {
